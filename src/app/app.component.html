@@ -1,0 +1,93 @@
+<a href="#" class="scrollToTop"></a>
+<div class="row" style="width:100%; margin: 0;background-image: url(
+    'assets/pictures/sea.png'); height:
+  200px; background-size: 100% 100%;">  
+  <div class="col-xs-12 mx-auto" style="margin-top: 20px; margin-bottom: 20px;">
+    <img height=150px src="assets/pictures/sealWhite.png">
+  </div>
+</div>
+
+<div style="font-weight: bolder; font-size: 16px; font-family: Raleway;  border-width:1px; border-style:solid; border-color: black; margin: 0; padding: 0;">
+  <nav class="navbar navbar-expand-md navbar-light" style="background-color:rgb(33, 115, 128);">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav" style="padding-left:30px;">
+        <li class="nav-item">
+          <a routerLinkActive="active" routerLink="/news">News</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/projects" routerLinkActive="active">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/tutorials" routerLinkActive="active">Tutorials</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/aboutme" routerLinkActive="active">About</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/calendar" routerLinkActive="active">Calendar</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+
+<div class="row justify-content-center" style="width: 100%; margin:0; padding:0; background-color: #CCFFFF;">
+  <div [@routeAnimations]="prepareRoute(outlet)" class="col-xs-12 route-container text-center" style="font-size: 16px; line-height:24px; font-family:Roboto; width: 100%;">
+    <router-outlet #outlet="outlet" (activate)="onActivate($event)"></router-outlet>
+  </div>
+</div>
+
+
+<div class="row" style="width:100%; background-color: #34DDDD; padding:0; margin:0;margin-right: 0; margin-left: 0; padding-bottom: 30px; padding-top: 30px; height:
+  100%; font-weight: bolder; font-size: 16px; font-family: Raleway;">
+  <div class="col-md-4" style="padding-left:30px;" id="footerlinks">
+    <a routerLink="/news" routerLinkActive="active">
+      News
+    </a>&nbsp;|&nbsp;
+    <a routerLink="/projects" routerLinkActive="active">
+      Projects
+    </a>&nbsp;|&nbsp;
+    <a routerLink="/tutorials" routerLinkActive="active">
+      Tutorials
+    </a>&nbsp;|&nbsp;
+    <a routerLink="/aboutme" routerLinkActive="active">
+      About
+    </a>&nbsp;|&nbsp;
+    <a routerLink="/calendar" routerLinkActive="active">
+      Calendar
+    </a>
+  </div>
+  <div class="col-sm-4">
+    <br>
+  </div>
+  <div class="col-md-4" style="text-align: right;padding-right:30px;">
+    <p>312-989-7342
+      <br> JohnCervantes@protonmail.com</p>
+    <a href="mailto:JohnCervantes@protonmail.com" target="_blank" style="cursor: pointer; text-decoration: none;">
+      <img border=0 height=30px src="assets/pictures/proton.png">
+    </a> &nbsp;
+    <a (click)="goToGithub()" style="cursor: pointer; text-decoration: none;">
+      <img border=0 height=30px src="assets/pictures/github.png">
+    </a> &nbsp;
+    <a (click)="goToLinkedIn()" style="cursor: pointer; text-decoration: none;">
+      <img border=0 style="text-decoration:none" height=30px src="assets/pictures/linkedin.png">
+    </a> &nbsp;
+    <a (click)="goToYoutube()" style="cursor: pointer; text-decoration: none;">
+      <img border=0 height=30px src="assets/pictures/youtube.png">
+    </a> &nbsp;
+    <a (click)="goToTwitter()" style="cursor: pointer; text-decoration: none;">
+      <img border=0 height=30px src="assets/pictures/twitter.png">
+    </a> &nbsp;
+    <a (click)="goToGooglePlayStore()" style="cursor: pointer; text-decoration: none;">
+      <img border=0 height=30px src="assets/pictures/playStoreIcon.png">
+    </a> &nbsp;
+    <a (click)="goToGooglePlayStore()" style="cursor: pointer; text-decoration: none;">
+      <img border=0 height=30px src="assets/pictures/appleStoreIcon.png">
+    </a>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+.active {
+	color: white;
+	font-weight:bolder;
+}
+
+a:hover{
+    color:white;
+    text-decoration: none;
+}
+a{
+    color:black;
+}
+
+li{
+    margin-right: 25px;
+}

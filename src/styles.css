@@ -1,0 +1,59 @@
+ /* You can add global styles to this file, and also import other style files */
+ 
+ div.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ .scrollToTop {
+	z-index:2;
+	 width: 75px;
+    height: 75px;
+	background-image: url('assets/pictures/toparrow.png');
+    position: fixed;
+    bottom: 50%;
+    right: 30px;
+    display: none;
+}
+
+ 
+ input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
+	 border: 1px solid red;
+	 }
+ .determination > li.active{
+    list-style-image: url('assets/pictures/heart.png');
+}
+ 
+.determination > li:hover{
+    list-style-image: url('assets/pictures/heart.png');
+}
+.determination > li {
+	 list-style-image: url('assets/pictures/blankheart.png');
+	 list-style-position: inside;
+}
+
+
+ 
+ @font-face { font-family: determination-mono; 
+			 src: url('assets/fonts/DTM-Mono.otf'); }
+			 
+			  
+ @font-face { font-family: determination-sans; 
+			 src: url('assets/fonts/DTM-Sans.otf'); }
+ 
+ /*
+ .navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav>.active> a, 
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+ 
+    background-color:#78D5E3; 
+	color: white;
+	font-weight:bolder;
+}
+
+*/
+
+
+
+body { margin: 0; }

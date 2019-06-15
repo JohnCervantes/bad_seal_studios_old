@@ -1,0 +1,17 @@
+<div style="margin-top: 50px; margin-bottom: 50px">
+  <div class="mx-auto" style="width: 80%; border-radius: 12px; border-color: white; border-width: 5px; border-style: solid; background-color: black;">
+    <div style="text-align: left; font-family: determination-mono; color:white; margin: 30px; color: white; ">
+      <p style="color: yellow;">*anxiously checks schedule*</p>
+      <p> * (What should you do today?) </p>
+      <ul class="determination" style="columns: 2;">
+        <li *ngFor="let item of tasks; let i=index" [ngClass]="{'active': selectedIndex === i}" style="width: 50%;margin-bottom: 10px; cursor: pointer;"
+          (click)="select(i)">
+          {{item}}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=jhannxd%40gmail.com&amp;color=%230F4B38&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%236B3304&amp;ctz=America%2FChicago"
+    style="border-width:0" width="70%" height="500px" class="center-block" frameborder="0" scrolling="no"></iframe>
+</div>
