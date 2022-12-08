@@ -26,7 +26,7 @@
     "@ng-bootstrap/ng-bootstrap": "^2.1.0",
     "bootstrap": "^4.1.1",
     "core-js": "^2.5.7",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "jquery": "^3.3.1",
     "mongodb": "^3.0.10",
     "mongoose": "^5.1.5",
